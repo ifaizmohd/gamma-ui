@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 import { ThemeProvider as StyledThemeProvider } from "styled-components";
-import { AttireByAasia } from "./Themes";
+import { defaultTheme } from "./default";
 
 export const AppThemeProvider = ({ children }: { children: ReactNode }) => {
   return (
-    <StyledThemeProvider theme={AttireByAasia}>{children}</StyledThemeProvider>
+    <StyledThemeProvider theme={defaultTheme}>{children}</StyledThemeProvider>
   );
 };

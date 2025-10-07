@@ -1,70 +1,96 @@
-@import "tailwindcss";
+/* ========================================
+   Design Tokens — tokens.css
+   ======================================== */
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Brand colors */
+  --color-brand-primary: #2563eb; /* blue-600 */
+  --color-brand-primary-hover: #1d4ed8;
+  --color-brand-secondary: #9333ea; /* purple-600 */
+  --color-brand-accent: #f59e0b; /* amber-500 */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Semantic colors */
+  --color-success: #22c55e;
+  --color-warning: #facc15;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* Neutral palette */
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+  --color-neutral-1000: #000000;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  /* ----- Surfaces (Elevation Layers) ----- */
+  --surface-background: var(--color-neutral-50);
+  --surface-card: var(--color-neutral-0);
+  --surface-modal: var(--color-neutral-100);
+  --surface-popover: var(--color-neutral-0);
+  --surface-hover: var(--color-neutral-100);
+  --surface-pressed: var(--color-neutral-200);
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  /* ----- Text Colors ----- */
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-600);
+  --text-tertiary: var(--color-neutral-500);
+  --text-inverse: var(--color-neutral-0);
+  --text-link: var(--color-brand-primary);
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  /* ----- Border Colors ----- */
+  --border-default: var(--color-neutral-200);
+  --border-strong: var(--color-neutral-400);
+  --border-focus: var(--color-brand-primary);
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  /* ----- States ----- */
+  --state-hover-opacity: 0.08;
+  --state-focus-ring-color: var(--color-brand-primary);
+  --state-disabled-opacity: 0.4;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  /* ----- Elevation / Shadows ----- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
+
+  /* ----- Border Radius ----- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* ----- Spacing ----- */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+
+  /* ----- Typography ----- */
+  --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-sm: 1.25;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.75;
+
+  /* ----- Transitions ----- */
+  --transition-fast: 150ms ease-in-out;
+  --transition-medium: 250ms ease-in-out;
+  --transition-slow: 400ms ease-in-out;
 }
