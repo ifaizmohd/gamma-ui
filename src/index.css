@@ -76,7 +76,8 @@
   --space-xxl: 48px;
 
   /* ----- Typography ----- */
-  --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-family-mono: "Roboto Mono", monospace;
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
@@ -93,4 +94,17 @@
   --transition-fast: 150ms ease-in-out;
   --transition-medium: 250ms ease-in-out;
   --transition-slow: 400ms ease-in-out;
+
+  /* ----- Space units ----- */
+  --unit-1: 4px;
+  --unit-2: 8px;
+  --unit-3: 12px;
+  --unit-4: 16px;
+  --unit-5: 20px;
+  --unit-6: 24px;
+  --unit-7: 28px;
+  --unit-8: 32px;
+  --unit-9: 36px;
+  --unit-10: 40px;
+  --unit-11: 44px;
 }
