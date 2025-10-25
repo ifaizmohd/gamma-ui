@@ -31,15 +31,15 @@ const inputVariants = {
 const inputSizes = {
   sm: css`
     padding: 6px 10px;
-    font-size: var(--font-size-sm);
+    font-size: ${({ theme }) => theme.typography.fontSize.sm};
   `,
   md: css`
     padding: var(--unit-2) var(--unit-3);
-    font-size: var(--font-size-md);
+    font-size: ${({ theme }) => theme.typography.fontSize.md};
   `,
   lg: css`
     padding: 10px 14px;
-    font-size: var(--font-size-lg);
+    font-size: ${({ theme }) => theme.typography.fontSize.lg};
   `,
 };
 
@@ -51,17 +51,17 @@ export const StyledInput = styled.input<InputProps>`
   width: ${({ fullWidth }) => (fullWidth ? "100%" : "auto")};
   border-radius: var(--radius-md);
   color: var(--color-text-primary);
-  transition: all 0.2s ease;
+  transition: ${({ theme }) => theme.transition.medium};
   outline: none;
 
   &:focus ~ label,
   &:not(:placeholder-shown) ~ label {
     top: -10px;
-    left: 4px;
+    left: var(--unit-1);
     font-size: ${({ theme }) => theme.typography.fontSize.xs};
     color: ${({ theme }) => theme.colors.primary};
     background-color: var(--color-neutral-0);
-    padding: 0 4px;
+    padding: 0 var(--unit-1);
   }
 
   ${({ variant = "outlined" }) => inputVariants[variant]}
