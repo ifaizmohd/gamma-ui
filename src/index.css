@@ -107,4 +107,26 @@
   --unit-9: 36px;
   --unit-10: 40px;
   --unit-11: 44px;
+
+  /* ----- Font sizes ----- */
+  --font-scale-50: calc(var(--font-base-size) * 0.75); /* 12px */
+  --font-scale-62: calc(var(--font-base-size) * 0.875); /* 14px */
+  --font-scale-75: calc(var(--font-base-size) * 0.9375); /* 15px */
+  --font-scale-87: calc(var(--font-base-size) * 1); /* 16px */
+  --font-scale-100: calc(var(--font-base-size) * 1.125); /* 18px */
+  --font-scale-112: calc(var(--font-base-size) * 1.25); /* 20px */
+  --font-scale-125: calc(var(--font-base-size) * 1.375); /* 22px */
+  --font-scale-137: calc(var(--font-base-size) * 1.5); /* 24px */
+  --font-scale-150: calc(var(--font-base-size) * 1.625); /* 26px */
+  --font-scale-162: calc(var(--font-base-size) * 1.75); /* 28px */
+  --font-scale-175: calc(var(--font-base-size) * 1.875); /* 30px */
+  --font-scale-187: calc(var(--font-base-size) * 2); /* 32px */
+  --font-scale-200: calc(var(--font-base-size) * 2.125); /* 34px */
+  --font-scale-212: calc(var(--font-base-size) * 2.25); /* 36px */
+  --font-scale-225: calc(var(--font-base-size) * 2.375); /* 38px */
+  --font-scale-237: calc(var(--font-base-size) * 2.5); /* 40px */
+  --font-scale-250: calc(var(--font-base-size) * 2.625); /* 42px */
+  --font-scale-262: calc(var(--font-base-size) * 2.75); /* 44px */
+  --font-scale-275: calc(var(--font-base-size) * 2.875); /* 46px */
+  --font-scale-300: calc(var(--font-base-size) * 3); /* 48px */
 }
