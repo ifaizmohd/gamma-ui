@@ -112,5 +112,6 @@ export const defaultTheme: DefaultTheme = {
     fast: "var(--transition-fast)",
     medium: "var(--transition-medium)",
     slow: "var(--transition-slow)",
+    fadeIn: "var(--transition-fade-in)",
   },
 };

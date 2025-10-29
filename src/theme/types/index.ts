@@ -102,6 +102,7 @@ declare module "styled-components" {
       fast: string;
       medium: string;
       slow: string;
+      fadeIn: string;
     };
   }
 }

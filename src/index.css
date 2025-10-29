@@ -94,6 +94,7 @@
   --transition-fast: 150ms ease-in-out;
   --transition-medium: 250ms ease-in-out;
   --transition-slow: 400ms ease-in-out;
+  --transition-fade-in: fadeIn 0.25s ease-out;
 
   /* ----- Space units ----- */
   --unit-1: 4px;
