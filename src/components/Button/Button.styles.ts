@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import type { ButtonProps } from "./Button.types";
+import { Actionable } from "../Actionable/Actionable";
 
 const sizes = {
   sm: css`
@@ -60,7 +61,7 @@ const variants = {
   `,
 };
 
-export const StyledButton = styled.button<ButtonProps>`
+export const StyledButton = styled(Actionable)<ButtonProps>`
   display: inline-flex;
   align-items: center;
   justify-content: center;

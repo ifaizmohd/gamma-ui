@@ -1,8 +1,8 @@
 import React from "react";
 import { StyledButton } from "./Button.styles";
-import type { ButtonProps } from "./Button.types";
+import type { Props } from "./Button.types";
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<Props> = ({
   children,
   isLoading,
   leftIcon,
