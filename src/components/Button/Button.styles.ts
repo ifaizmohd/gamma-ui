@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import type { ButtonProps } from "./Button.types";
-import { Actionable } from "../Actionable/Actionable";
+import { Actionable } from "../Actionable";
 
 const sizes = {
   sm: css`

@@ -5,6 +5,7 @@ export const defaultTheme: DefaultTheme = {
     primary: "var(--color-brand-primary)",
     secondary: "var(--color-brand-secondary)",
     accent: "var(--color-brand-accent)",
+    hover: "var(--color-brand-primary-hover)",
 
     /** semantic colors */
     semantics: {

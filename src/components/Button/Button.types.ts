@@ -1,4 +1,4 @@
-import type { ActionableProps } from "../Actionable/Actionable.types";
+import type { ActionableProps } from "../Actionable";
 
 export type ButtonVariant = "primary" | "secondary" | "outline" | "text";
 export type ButtonSize = "sm" | "md" | "lg";
