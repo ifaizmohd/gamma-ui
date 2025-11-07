@@ -14,12 +14,11 @@ export const StyledSkeleton = styled.div<{
   width: ${({ $width }) =>
     typeof $width === "number" ? `${$width}px` : $width || "100%"};
   height: ${({ $height }) =>
-    typeof $height === "number" ? `${$height}px` : $height || "1em"};
+    typeof $height === "number" ? `${$height}px` : $height || "2em"};
   border-radius: ${({ $borderRadius }) =>
     typeof $borderRadius === "number"
       ? `${$borderRadius}px`
       : $borderRadius || "4px"};
-
   background: linear-gradient(
     90deg,
     var(--surface-hover) 25%,
