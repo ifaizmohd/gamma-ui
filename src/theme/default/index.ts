@@ -1,6 +1,7 @@
 import type { DefaultTheme } from "styled-components";
+import type { IndexOf } from "@utils/types.utils";
 
-export const defaultTheme: DefaultTheme = {
+export const defaultTheme: IndexOf<DefaultTheme> = {
   colors: {
     primary: "var(--color-brand-primary)",
     secondary: "var(--color-brand-secondary)",
