@@ -21,7 +21,9 @@ const preview: Preview = {
   decorators: [
     (Story) => (
       <AppThemeProvider>
-        <Story />
+        <div style={{ margin: "3em", padding: "1em" }}>
+          <Story />
+        </div>
       </AppThemeProvider>
     ),
   ],
