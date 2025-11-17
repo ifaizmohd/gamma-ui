@@ -130,4 +130,9 @@
   --font-scale-262: calc(var(--font-base-size) * 2.75); /* 44px */
   --font-scale-275: calc(var(--font-base-size) * 2.875); /* 46px */
   --font-scale-300: calc(var(--font-base-size) * 3); /* 48px */
+
+  /* ----- Breakpoints ----- */
+  --viewport-s: "(max-width: 768px)";
+  --viewport-m: "(min-width: 769px) and (max-width: 1023px)";
+  --viewport-l: "(min-width: 1024px)";
 }
